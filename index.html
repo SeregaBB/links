@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links Praktikum</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <form class="form" name="frm">
+        <input type="text" class="query"  name="query" placeholder="Начните писать ваш запрос">
+    </form>
+    </header>
+
+
+    <section class="results">
+        <div class="card" data-tags="web">
+            <h3 class="card__title">
+                web title
+            </h3>
+            <p class="card__subtitle">
+                Card subtitle
+            </p>
+
+            <a href="#" class="card__link">Link</a>
+        </div>
+
+        <div class="card" data-tags="css">
+            <h3 class="card__title">
+                Csss title
+            </h3>
+            <p class="card__subtitle">
+                Card subtitle
+            </p>
+
+            <a href="#" class="card__link">Link</a>
+        </div>
+
+
+        <div class="card" data-tags="html">
+            <h3 class="card__title">
+                Html title
+            </h3>
+            <p class="card__subtitle">
+                Card subtitle
+            </p>
+
+            <a href="#" class="card__link">Link</a>
+        </div>
+
+
+        <div class="card" data-tags="react">
+            <h3 class="card__title">
+                React
+            </h3>
+            <p class="card__subtitle">
+                Card subtitle
+            </p>
+
+            <a href="#" class="card__link">Link</a>
+        </div>
+
+        <div class="card" data-tags="react">
+            <h3 class="card__title">
+                React
+            </h3>
+            <p class="card__subtitle">
+                Card subtitle
+            </p>
+
+            <a href="#" class="card__link">Link</a>
+        </div>
+
+        <div class="card" data-tags="react">
+            <h3 class="card__title">
+                React
+            </h3>
+            <p class="card__subtitle">
+                Card subtitle
+            </p>
+
+            <a href="#" class="card__link">Link</a>
+        </div>
+
+
+        <div class="card" data-tags="react">
+            <h3 class="card__title">
+                React
+            </h3>
+            <p class="card__subtitle">
+                Card subtitle
+            </p>
+
+            <a href="#" class="card__link">Link</a>
+        </div>
+
+
+        <div class="card" data-tags="react">
+            <h3 class="card__title">
+                React
+            </h3>
+            <p class="card__subtitle">
+                Card subtitle
+            </p>
+
+            <a href="#" class="card__link">Link</a>
+        </div>
+    </section>
+
+    <script>
+        let inpt = document.forms.frm.elements.query;
+
+        inpt.addEventListener('input', function(){
+            let query = this.value;
+            let cards = Array.from(document.querySelectorAll('.card'));
+
+            cards.forEach((card)=>{
+                card.getAttribute('data-tags').indexOf(query) < 0 ?  card.style.display = 'none' : card.style.display = 'block';
+            });
+        });
+    </script>
+</body>
+</html>
