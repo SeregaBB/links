@@ -1,6 +1,6 @@
 @import url('vendor/normalize.css');
 div {
-    border: 1px solid red;
+    
 }
 
 
@@ -33,15 +33,30 @@ div {
 
 .results {
     display: grid;
-    grid-template-columns: repeat(auto-fit,200px);
+    grid-template-columns: repeat(auto-fit,350px);
     padding: 20px;
     grid-gap: 40px;
     justify-content: center;
 }
 .card {
-    width: 200px;
+    max-width: 350px;
     height: 200px;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgb(128, 126, 126);
 }
-
+.card__title {
+    margin: 0;
+}
+.card__img {
+    max-height: 45%;
+}
+.card__link {
+    text-decoration: none;
+    color: rgb(128, 126, 126);
+    text-transform: uppercase;
+}
 body::-webkit-scrollbar { width: 0 !important }

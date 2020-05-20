@@ -15,96 +15,37 @@
 
 
     <section class="results">
-        <div class="card" data-tags="web">
-            <h3 class="card__title">
-                web title
-            </h3>
-            <p class="card__subtitle">
-                Card subtitle
-            </p>
-
-            <a href="#" class="card__link">Link</a>
-        </div>
-
-        <div class="card" data-tags="css">
-            <h3 class="card__title">
-                Csss title
-            </h3>
-            <p class="card__subtitle">
-                Card subtitle
-            </p>
-
-            <a href="#" class="card__link">Link</a>
-        </div>
-
-
-        <div class="card" data-tags="html">
-            <h3 class="card__title">
-                Html title
-            </h3>
-            <p class="card__subtitle">
-                Card subtitle
-            </p>
-
-            <a href="#" class="card__link">Link</a>
-        </div>
-
-
         <div class="card" data-tags="react">
+            <img src="imgs/react.png" alt="react" class="card__img">
             <h3 class="card__title">
                 React
             </h3>
             <p class="card__subtitle">
                 Card subtitle
             </p>
-
-            <a href="#" class="card__link">Link</a>
+            <a href="https://reactjs.org/" target="_blank" class="card__link">reactjs.org</a>
         </div>
 
-        <div class="card" data-tags="react">
+        <div class="card" data-tags="html css ">
+            <img src="imgs/html.png" alt="HtmlBook" class="card__img">
             <h3 class="card__title">
-                React
+                HtmlBook
             </h3>
             <p class="card__subtitle">
                 Card subtitle
             </p>
-
-            <a href="#" class="card__link">Link</a>
+            <a href="http://htmlbook.ru/" target="_blank" class="card__link">htmlbook.ru</a>
         </div>
 
-        <div class="card" data-tags="react">
+        <div class="card" data-tags="html css js javascript jquery http api dom ">
+            <img src="imgs/mdn.png" alt="MDN" class="card__img">
             <h3 class="card__title">
-                React
+                MDN
             </h3>
             <p class="card__subtitle">
                 Card subtitle
             </p>
-
-            <a href="#" class="card__link">Link</a>
-        </div>
-
-
-        <div class="card" data-tags="react">
-            <h3 class="card__title">
-                React
-            </h3>
-            <p class="card__subtitle">
-                Card subtitle
-            </p>
-
-            <a href="#" class="card__link">Link</a>
-        </div>
-
-
-        <div class="card" data-tags="react">
-            <h3 class="card__title">
-                React
-            </h3>
-            <p class="card__subtitle">
-                Card subtitle
-            </p>
-
-            <a href="#" class="card__link">Link</a>
+            <a href="https://developer.mozilla.org/ru/" class="card__link" target="_blank">developer.mozilla.org</a>
         </div>
     </section>
 
@@ -116,7 +57,7 @@
             let cards = Array.from(document.querySelectorAll('.card'));
 
             cards.forEach((card)=>{
-                card.getAttribute('data-tags').indexOf(query) < 0 ?  card.style.display = 'none' : card.style.display = 'block';
+                card.getAttribute('data-tags').indexOf(query) < 0 ?  card.style.display = 'none' : card.style.display = 'flex';
             });
         });
     </script>
