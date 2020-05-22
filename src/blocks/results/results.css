@@ -1,0 +1,8 @@
+.results {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,350px);
+    padding: 20px;
+    grid-gap: 40px;
+    justify-content: center;
+    height: 100%;
+}

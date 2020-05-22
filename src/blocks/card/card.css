@@ -1,0 +1,20 @@
+@import url('__title/card__title.css');
+@import url('__subtitle/card__subtitle.css');
+@import url('__img/card__img.css');
+@import url('__link/card__link.css');
+@import url('_visible/card_visible_hidden.css');
+
+.card {
+    max-width: 350px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgb(128, 126, 126);
+    padding-top: 10px;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+    background: #fff;
+}
